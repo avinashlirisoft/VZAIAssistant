@@ -1,0 +1,600 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name VZAIAssistantClient
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Combine
+import CommonCrypto
+import CoreData
+import Foundation
+import NaturalLanguage
+import Network
+import Security
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+@_exported import VZAIAssistantClient
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension VZAIAssistantClient.VZAClientConfig {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<VZAIAssistantClient.VZAClientConfig>
+  @objc @NSManaged dynamic public var ttl: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var baseUrl: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var syncBaseUrl: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var greetingMessage: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var promptCharLimit: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var requestTimeout: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isTextGenEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var canRegenerate: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var updatedTime: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var disclaimerMessage: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isLocalConfig: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var showLocalGreeting: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var oldDocUpdateTimestamp: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var clientLocalRagUrlUpdatedTime: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var clientUseLocalRag: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var clientLocalRagUrl: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var messageRetainDays: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var enableAssistant: Swift.Bool {
+    @objc get
+    @objc set
+  }
+}
+extension VZAIAssistantClient.VZAClientConfig : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+public struct VZAConversationInfo {
+  public let conversationId: Swift.String
+  public let title: Swift.String
+  public let createdTime: Swift.Double
+  public let updatedTime: Swift.Double
+}
+extension VZAIAssistantClient.VZASdkState {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<VZAIAssistantClient.VZASdkState>
+  @objc @NSManaged dynamic public var state: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+}
+extension VZAIAssistantClient.VZASdkState : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+public enum VZARegistrationState {
+  case unregistered
+  case registering
+  case registered
+  case reRegistering
+  case failed(code: Swift.Int, message: Swift.String)
+  public func getValue() -> Swift.Int
+  public static func getState(val: Swift.Int) -> VZAIAssistantClient.VZARegistrationState
+}
+@objc @_inheritsConvenienceInitializers public class VZASdkState : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+public protocol VZADatabaseRepository {
+  var dataStack: any VZAIAssistantClient.CoreDataStackProtocol { get set }
+  var backgroundContext: CoreData.NSManagedObjectContext { get }
+  var newBackgroundContext: CoreData.NSManagedObjectContext { get }
+  var viewContext: CoreData.NSManagedObjectContext { get }
+  func getManagedObjectDecoder(moc: CoreData.NSManagedObjectContext?) -> Foundation.JSONDecoder
+  @discardableResult
+  func save(context: CoreData.NSManagedObjectContext) -> Swift.Result<Swift.Bool, any Swift.Error>
+  func get<T>(attribute: Swift.String, value: Any, context: CoreData.NSManagedObjectContext) -> T? where T : CoreData.NSManagedObject
+  func getAll<T>(context: CoreData.NSManagedObjectContext) -> [T]? where T : CoreData.NSManagedObject
+  func fetch(fetchRequest: CoreData.NSFetchRequest<any CoreData.NSFetchRequestResult>, context: CoreData.NSManagedObjectContext) -> [Any]?
+  func clearDB(includeAppLevel: Swift.Bool)
+}
+extension CoreData.NSManagedObjectContext {
+  public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
+}
+@objc @_inheritsConvenienceInitializers public class VZLogger : ObjectiveC.NSObject {
+  public class func config(_ config: VZAIAssistantClient.VZALogConfig, logDelegate: (any VZAIAssistantClient.VZAAssistantDelegate)? = nil, isAsync: Swift.Bool = true)
+  public class func verbose(_ message: @autoclosure () -> Any? = nil, _ file: Swift.StaticString = #file, _ function: Swift.StaticString = #function, line: Swift.UInt = #line, thread: Swift.String = Thread.current.threadName)
+  public class func debug(_ message: @autoclosure () -> Any? = nil, _ file: Swift.StaticString = #file, _ function: Swift.StaticString = #function, line: Swift.UInt = #line, thread: Swift.String = Thread.current.threadName)
+  public class func info(_ message: @autoclosure () -> Any? = nil, _ file: Swift.StaticString = #file, _ function: Swift.StaticString = #function, line: Swift.UInt = #line, thread: Swift.String = Thread.current.threadName)
+  public class func warning(_ message: @autoclosure () -> Any? = nil, _ file: Swift.StaticString = #file, _ function: Swift.StaticString = #function, line: Swift.UInt = #line, thread: Swift.String = Thread.current.threadName)
+  public class func error(_ message: @autoclosure () -> Any? = nil, _ file: Swift.StaticString = #file, _ function: Swift.StaticString = #function, line: Swift.UInt = #line, thread: Swift.String = Thread.current.threadName)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Foundation.Thread {
+  public var threadName: Swift.String {
+    get
+  }
+}
+public enum VZAError : Swift.Error {
+  case networkFailure
+  case decodeFailure
+  case invalidURL
+  case noResponse
+  case unauthorized
+  case dbError
+  case invalidCreds
+  case error(code: Swift.Int, message: Swift.String?)
+  case multipartError(data: Foundation.Data, statusCode: Swift.Int)
+  case fixieError(code: Swift.Int, message: Swift.String?, convId: Swift.String)
+  case abort
+  public func message() -> Swift.String
+}
+public struct InjectSettings {
+  public static var resolver: (any VZAIAssistantClient.Resolver)?
+}
+public enum VZAConversationType : Swift.Int16 {
+  case text
+  case photo
+  public init?(rawValue: Swift.Int16)
+  public typealias RawValue = Swift.Int16
+  public var rawValue: Swift.Int16 {
+    get
+  }
+}
+public struct VZALogConfig {
+  public init(filePath: Swift.String, filePrefix: Swift.String?, logLevel: VZAIAssistantClient.VZALogLevel)
+}
+public enum VZALogLevel : Swift.String {
+  case verbose
+  case debug
+  case info
+  case warning
+  case error
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AgentIdValue : Swift.String, Swift.CaseIterable {
+  case debug
+  case release
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [VZAIAssistantClient.AgentIdValue]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [VZAIAssistantClient.AgentIdValue] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct AgentConfig {
+  public static var agentId: Swift.String {
+    get
+  }
+  public static var selfHelpAgentID: Swift.String
+}
+public typealias DBOperationResultType = (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void
+extension Swift.CodingUserInfoKey {
+  public static let managedObjectContext: Swift.CodingUserInfoKey?
+}
+public protocol CoreDataStackProtocol : AnyObject {
+  var modelName: Swift.String { get set }
+  var storeType: Swift.String { get set }
+  var backgroundContext: CoreData.NSManagedObjectContext { get }
+  var newBackgroundContext: CoreData.NSManagedObjectContext { get }
+  var viewContext: CoreData.NSManagedObjectContext { get }
+  var persistentContainer: CoreData.NSPersistentContainer { get }
+  func saveContext(context: CoreData.NSManagedObjectContext) -> Swift.Result<Swift.Bool, any Swift.Error>
+  func deleteAllEntities()
+  func deleteUserData()
+}
+public protocol VZAIAssistantAdaptor : Combine.ObservableObject {
+  func sendText(message text: Swift.String, didCreateConversation: (Swift.String) -> Swift.Void, conversationId: Swift.String?) async -> Swift.Result<Swift.Bool, VZAIAssistantClient.VZAError>
+  func sendMessageFeedback(value: VZAIAssistantClient.VZAMsgFeedbackValue, comment: Swift.String?, msgId: Swift.String) async -> Swift.Result<Swift.Bool, VZAIAssistantClient.VZAError>
+  func unregister()
+  func clearChat() -> Swift.Bool
+  func clientConfig() -> VZAIAssistantClient.VZAClientConfigModel
+  func getSessionId() -> Swift.String?
+}
+public protocol VZAAssistantDelegate : AnyObject {
+  func getAppCredentials() -> VZAIAssistantClient.VZAAppCredentials
+  func log(level: VZAIAssistantClient.VZALogLevel, info: [Swift.String : Swift.String])
+}
+final public class VZAIAssistant : VZAIAssistantClient.VZAIAssistantAdaptor {
+  weak final public var delegate: (any VZAIAssistantClient.VZAAssistantDelegate)?
+  public init(config: VZAIAssistantClient.VZAConfig, delegate: any VZAIAssistantClient.VZAAssistantDelegate)
+  @objc deinit
+  final public func sendText(message text: Swift.String, didCreateConversation: (Swift.String) -> Swift.Void, conversationId: Swift.String?) async -> Swift.Result<Swift.Bool, VZAIAssistantClient.VZAError>
+  final public func sendMessageFeedback(value: VZAIAssistantClient.VZAMsgFeedbackValue, comment: Swift.String?, msgId: Swift.String) async -> Swift.Result<Swift.Bool, VZAIAssistantClient.VZAError>
+  final public func unregister()
+  final public func clearChat() -> Swift.Bool
+  final public func clientConfig() -> VZAIAssistantClient.VZAClientConfigModel
+  final public func getSessionId() -> Swift.String?
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+}
+public struct VZAAppCredentials {
+  public init(clientInfo: VZAIAssistantClient.VZAClientInfo, credential: VZAIAssistantClient.VZACosmoCredential, routerInfo: VZAIAssistantClient.VZARouterInfo, clusterInfo: VZAIAssistantClient.VZAClusterInfo)
+}
+extension Foundation.URL {
+  public var fileSize: Swift.Int? {
+    get
+  }
+  public var fileData: Foundation.Data? {
+    get
+  }
+}
+public protocol Resolver {
+  func resolve<T>(_ type: T.Type, name: Swift.String?) -> T?
+}
+public enum VZAMsgFeedbackValue : Swift.Int16 {
+  case noFeedback
+  case positive
+  case negative
+  public init?(rawValue: Swift.Int16)
+  public typealias RawValue = Swift.Int16
+  public var rawValue: Swift.Int16 {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class VZLogManager : ObjectiveC.NSObject {
+  @objc deinit
+}
+public struct CodableValue : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public typealias Parameters = [Swift.String : VZAIAssistantClient.CodableValue]
+public typealias HTTPHeaders = [Swift.String : Swift.String]
+@objc @_Concurrency.MainActor public class VZATextChatController : ObjectiveC.NSObject, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($fetchedChats) @_Concurrency.MainActor public var fetchedChats: [VZAIAssistantClient.VZATextMessageModel] {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  @_Concurrency.MainActor public var $fetchedChats: Combine.Published<[VZAIAssistantClient.VZATextMessageModel]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @_Concurrency.MainActor public init(conversationId: Swift.String?)
+  @_Concurrency.MainActor public func createConversation() async -> Swift.String?
+  @_Concurrency.MainActor public func greetUser(using fetcher: any VZAIAssistantClient.VZAIAssistantAdaptor) async -> (any Swift.Error)?
+  @_Concurrency.MainActor public func sendMessage(_ text: Swift.String, using fetcher: any VZAIAssistantClient.VZAIAssistantAdaptor) async -> (any Swift.Error)?
+  @_Concurrency.MainActor public var canAddAttachment: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor public func setConversationId(_ id: Swift.String)
+  @_Concurrency.MainActor public func resetConversation()
+  @_Concurrency.MainActor public func forceFetch()
+  @_Concurrency.MainActor public func hasConversationAfter(time: Swift.Double) -> Swift.Bool
+  @_Concurrency.MainActor public func sendMessage(_ text: Swift.String, filePath: Swift.String?, using fetcher: any VZAIAssistantClient.VZAIAssistantAdaptor) async -> (any Swift.Error)?
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+extension VZAIAssistantClient.VZATextChatController : CoreData.NSFetchedResultsControllerDelegate {
+  @_Concurrency.MainActor @objc dynamic public func controllerWillChangeContent(_ controller: CoreData.NSFetchedResultsController<any CoreData.NSFetchRequestResult>)
+  @_Concurrency.MainActor @objc dynamic public func controllerDidChangeContent(_ controller: CoreData.NSFetchedResultsController<any CoreData.NSFetchRequestResult>)
+}
+public protocol VZATextMessageProtocol : Swift.Equatable, Swift.Identifiable {
+  var msgId: Swift.String { get set }
+  var convId: Swift.String { get set }
+  var createdTime: Swift.Double { get set }
+  var text: Swift.String { get set }
+  var msgType: VZAIAssistantClient.VZAMessageType { get set }
+  var isOutgoing: Swift.Bool { get set }
+  var isGreetingMsg: Swift.Bool { get set }
+  var status: VZAIAssistantClient.VZAMessageStatus { get set }
+  var isErrorMsg: Swift.Bool { get set }
+  var feedbackValue: VZAIAssistantClient.VZAMsgFeedbackValue { get set }
+  var feedbackComment: Swift.String? { get set }
+}
+@_hasMissingDesignatedInitializers public class VZATextMessageModel : VZAIAssistantClient.VZATextMessageProtocol {
+  public static func == (lhs: VZAIAssistantClient.VZATextMessageModel, rhs: VZAIAssistantClient.VZATextMessageModel) -> Swift.Bool
+  public var msgId: Swift.String
+  public var convId: Swift.String
+  public var createdTime: Swift.Double
+  public var text: Swift.String
+  public var msgType: VZAIAssistantClient.VZAMessageType
+  public var isOutgoing: Swift.Bool
+  public var isGreetingMsg: Swift.Bool
+  public var status: VZAIAssistantClient.VZAMessageStatus
+  public var isErrorMsg: Swift.Bool
+  public var feedbackValue: VZAIAssistantClient.VZAMsgFeedbackValue
+  public var feedbackComment: Swift.String?
+  public init(id: Swift.String, convId: Swift.String, text: Swift.String)
+  public typealias ID = Swift.ObjectIdentifier
+  @objc deinit
+}
+public protocol VZASdkStateProtocol {
+  var state: VZAIAssistantClient.VZARegistrationState { get set }
+}
+@_hasMissingDesignatedInitializers public class VZASdkStateModel : VZAIAssistantClient.VZASdkStateProtocol {
+  public var state: VZAIAssistantClient.VZARegistrationState
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor public class VZASdkStateController : ObjectiveC.NSObject, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($fetchedState) @_Concurrency.MainActor public var fetchedState: VZAIAssistantClient.VZASdkStateModel? {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  @_Concurrency.MainActor public var $fetchedState: Combine.Published<VZAIAssistantClient.VZASdkStateModel?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @_Concurrency.MainActor @objc override dynamic public init()
+  @_Concurrency.MainActor public func fetchSdkState()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+extension VZAIAssistantClient.VZASdkStateController : CoreData.NSFetchedResultsControllerDelegate {
+  @_Concurrency.MainActor @objc dynamic public func controllerWillChangeContent(_ controller: CoreData.NSFetchedResultsController<any CoreData.NSFetchRequestResult>)
+  @_Concurrency.MainActor @objc dynamic public func controllerDidChangeContent(_ controller: CoreData.NSFetchedResultsController<any CoreData.NSFetchRequestResult>)
+}
+public struct VZAChatResult : Swift.Decodable {
+  public var text: Swift.String?
+  public var conversationId: Swift.String?
+  public var prompt: Swift.String
+  public var id: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VZASummarytResult : Swift.Decodable {
+  public var text: Swift.String?
+  public var conversationId: Swift.String?
+  public var prompt: Swift.String
+  public var id: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VZAGenerateTextResult : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DataResponse : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers public class VZASyncInfo : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class VZAClientConfig : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension VZAIAssistantClient.VZASyncInfo {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<VZAIAssistantClient.VZASyncInfo>
+  @objc @NSManaged dynamic public var callNoteSyncAnchor: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var configUpdatedTime: Swift.Double {
+    @objc get
+    @objc set
+  }
+}
+extension VZAIAssistantClient.VZASyncInfo : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+public struct VZASignupInfo : Swift.Encodable {
+  public var type: Swift.String
+  public let mdn: Swift.String
+  public let deviceID: Swift.String
+  public let pushID: Swift.String
+  public let firstName: Swift.String
+  public let lastName: Swift.String
+  public init(type: Swift.String = "IOS", mdn: Swift.String, deviceID: Swift.String, pushID: Swift.String, firstName: Swift.String, lastName: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct VZAClientConfigModel : Swift.Decodable {
+  public let ttl: Swift.Double
+  public let setting: VZAIAssistantClient.ConfigSetting
+  public let lastUpdatedTime: Swift.Double?
+  public var isLocalConfig: Swift.Bool?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ConfigSetting : Swift.Decodable {
+  public let baseUrl: Swift.String
+  public let syncBaseUrl: Swift.String
+  public let promptCharLimit: Swift.Int, requestTimeout: Swift.Int
+  public let isTextGenEnabled: Swift.Int
+  public let greetingMessage: Swift.String?
+  public let disclaimerMessage: Swift.String
+  public var showLocalGreeting: Swift.Int?
+  public var clientUseLocalRag: Swift.Bool?
+  public var clientLocalRagUrlUpdatedTime: Swift.Double?
+  public var oldDocUpdateTimestamp: Swift.Double?
+  public var clientLocalRagUrl: Swift.String?
+  public let messageRetainDays: Swift.Int
+  public var enableAssistant: Swift.Bool?
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_Concurrency.MainActor public class VZAChatHistoryController : ObjectiveC.NSObject, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($fetchedChats) @_Concurrency.MainActor public var fetchedChats: [VZAIAssistantClient.VZATextMessageModel] {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  @_Concurrency.MainActor public var $fetchedChats: Combine.Published<[VZAIAssistantClient.VZATextMessageModel]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @_Concurrency.MainActor public init(conversationId: Swift.String?)
+  @_Concurrency.MainActor public var expiryInDays: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor public func setConversationId(_ id: Swift.String?)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public struct VZAMultipartRequest {
+  public let boundary: Swift.String
+  public init(boundary: Swift.String = UUID().uuidString)
+  public mutating func add(key: Swift.String, value: Swift.String)
+  public mutating func add(key: Swift.String, fileName: Swift.String, fileMimeType: Swift.String, fileData: Foundation.Data)
+  public var httpContentTypeHeadeValue: Swift.String {
+    get
+  }
+  public var httpBody: Foundation.Data {
+    get
+  }
+}
+public struct VZAUserInfo {
+}
+public enum VZAMessageType : Swift.Int16 {
+  case text
+  case file
+  case image
+  public init?(rawValue: Swift.Int16)
+  public typealias RawValue = Swift.Int16
+  public var rawValue: Swift.Int16 {
+    get
+  }
+}
+public enum VZAMessageStatus : Swift.Int {
+  case idle
+  case streaming
+  case completed
+  case failed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
+}
+public protocol LogFormatterDelegate : AnyObject {
+  func didReceiveLog(msg: Swift.String, level: Swift.String)
+}
+public struct VZAConfig {
+  public init(logConfig: VZAIAssistantClient.VZALogConfig?)
+}
+public enum VZAClusterType {
+  case dev
+  case stage
+  case prod
+  public static func == (a: VZAIAssistantClient.VZAClusterType, b: VZAIAssistantClient.VZAClusterType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct VZAClusterInfo {
+  public init(type: VZAIAssistantClient.VZAClusterType, apiKey: Swift.String, apiSecret: Swift.String)
+}
+public enum CosmoEnvironment : Swift.Int {
+  case dev
+  case pilot
+  case stage
+  case prod
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct VZACosmoCredential : Swift.Codable {
+  public init(accountID: Swift.String, did: Swift.String, dt: Swift.String, crspToken: Swift.String, xTransactionID: Swift.String, prdid: Swift.String, environment: VZAIAssistantClient.CosmoEnvironment)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VZAClientInfo {
+  public let deviceId: Swift.String
+  public let deviceType: VZAIAssistantClient.VZADeviceType
+  public init(deviceId: Swift.String, deviceType: VZAIAssistantClient.VZADeviceType)
+}
+public enum VZADeviceType : Swift.Int {
+  case unknown
+  case iphone
+  case ipad
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct VZARouterInfo : Swift.Codable {
+  public let name: Swift.String
+  public let model: Swift.String
+  public init(name: Swift.String, model: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension VZAIAssistantClient.VZALogLevel : Swift.Equatable {}
+extension VZAIAssistantClient.VZALogLevel : Swift.Hashable {}
+extension VZAIAssistantClient.VZALogLevel : Swift.RawRepresentable {}
+extension VZAIAssistantClient.VZAConversationType : Swift.Equatable {}
+extension VZAIAssistantClient.VZAConversationType : Swift.Hashable {}
+extension VZAIAssistantClient.VZAConversationType : Swift.RawRepresentable {}
+extension VZAIAssistantClient.AgentIdValue : Swift.Equatable {}
+extension VZAIAssistantClient.AgentIdValue : Swift.Hashable {}
+extension VZAIAssistantClient.AgentIdValue : Swift.RawRepresentable {}
+extension VZAIAssistantClient.VZAMsgFeedbackValue : Swift.Equatable {}
+extension VZAIAssistantClient.VZAMsgFeedbackValue : Swift.Hashable {}
+extension VZAIAssistantClient.VZAMsgFeedbackValue : Swift.RawRepresentable {}
+extension VZAIAssistantClient.VZATextChatController : Swift.Sendable {}
+extension VZAIAssistantClient.VZASdkStateController : Swift.Sendable {}
+extension VZAIAssistantClient.VZAChatHistoryController : Swift.Sendable {}
+extension VZAIAssistantClient.VZAMessageType : Swift.Equatable {}
+extension VZAIAssistantClient.VZAMessageType : Swift.Hashable {}
+extension VZAIAssistantClient.VZAMessageType : Swift.RawRepresentable {}
+extension VZAIAssistantClient.VZAMessageStatus : Swift.Equatable {}
+extension VZAIAssistantClient.VZAMessageStatus : Swift.Hashable {}
+extension VZAIAssistantClient.VZAMessageStatus : Swift.RawRepresentable {}
+extension VZAIAssistantClient.VZAClusterType : Swift.Equatable {}
+extension VZAIAssistantClient.VZAClusterType : Swift.Hashable {}
+extension VZAIAssistantClient.CosmoEnvironment : Swift.Equatable {}
+extension VZAIAssistantClient.CosmoEnvironment : Swift.Hashable {}
+extension VZAIAssistantClient.CosmoEnvironment : Swift.RawRepresentable {}
+extension VZAIAssistantClient.VZADeviceType : Swift.Equatable {}
+extension VZAIAssistantClient.VZADeviceType : Swift.Hashable {}
+extension VZAIAssistantClient.VZADeviceType : Swift.RawRepresentable {}

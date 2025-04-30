@@ -1,0 +1,2398 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "VZAIAssistantUI",
+    "printedName": "VZAIAssistantUI",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VZARootView",
+        "printedName": "VZARootView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15VZAIAssistantUI11VZARootViewV4bodyQrvp",
+            "mangledName": "$s15VZAIAssistantUI11VZARootViewV4bodyQrvp",
+            "moduleName": "VZAIAssistantUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15VZAIAssistantUI11VZARootViewV4bodyQrvg",
+                "mangledName": "$s15VZAIAssistantUI11VZARootViewV4bodyQrvg",
+                "moduleName": "VZAIAssistantUI",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15VZAIAssistantUI11VZARootViewV",
+        "mangledName": "$s15VZAIAssistantUI11VZARootViewV",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MarkdownUI",
+        "printedName": "MarkdownUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MarkdownUI",
+        "printedName": "MarkdownUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FLAnimatedImage",
+        "printedName": "FLAnimatedImage",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MarkdownUI",
+        "printedName": "MarkdownUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MarkdownUI",
+        "printedName": "MarkdownUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Contacts",
+        "printedName": "Contacts",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VZAAssistantUIDelegate",
+        "printedName": "VZAAssistantUIDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "event",
+            "printedName": "event(info:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDictionary",
+                "printedName": "Foundation.NSDictionary",
+                "usr": "c:objc(cs)NSDictionary"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15VZAIAssistantUI22VZAAssistantUIDelegateP5event4infoySo12NSDictionaryC_tF",
+            "mangledName": "$s15VZAIAssistantUI22VZAAssistantUIDelegateP5event4infoySo12NSDictionaryC_tF",
+            "moduleName": "VZAIAssistantUI",
+            "genericSig": "<τ_0_0 where τ_0_0 : VZAIAssistantUI.VZAAssistantUIDelegate>",
+            "sugared_genericSig": "<Self where Self : VZAIAssistantUI.VZAAssistantUIDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didTapDismissButton",
+            "printedName": "didTapDismissButton()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15VZAIAssistantUI22VZAAssistantUIDelegateP19didTapDismissButtonyyF",
+            "mangledName": "$s15VZAIAssistantUI22VZAAssistantUIDelegateP19didTapDismissButtonyyF",
+            "moduleName": "VZAIAssistantUI",
+            "genericSig": "<τ_0_0 where τ_0_0 : VZAIAssistantUI.VZAAssistantUIDelegate>",
+            "sugared_genericSig": "<Self where Self : VZAIAssistantUI.VZAAssistantUIDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15VZAIAssistantUI22VZAAssistantUIDelegateP",
+        "mangledName": "$s15VZAIAssistantUI22VZAAssistantUIDelegateP",
+        "moduleName": "VZAIAssistantUI",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VZASheetRootView",
+        "printedName": "VZASheetRootView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VZASheetRootView",
+                "printedName": "VZAIAssistantUI.VZASheetRootView",
+                "usr": "s:15VZAIAssistantUI16VZASheetRootViewV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15VZAIAssistantUI16VZASheetRootViewVACycfc",
+            "mangledName": "$s15VZAIAssistantUI16VZASheetRootViewVACycfc",
+            "moduleName": "VZAIAssistantUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15VZAIAssistantUI16VZASheetRootViewV4bodyQrvp",
+            "mangledName": "$s15VZAIAssistantUI16VZASheetRootViewV4bodyQrvp",
+            "moduleName": "VZAIAssistantUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15VZAIAssistantUI16VZASheetRootViewV4bodyQrvg",
+                "mangledName": "$s15VZAIAssistantUI16VZASheetRootViewV4bodyQrvg",
+                "moduleName": "VZAIAssistantUI",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15VZAIAssistantUI16VZASheetRootViewV",
+        "mangledName": "$s15VZAIAssistantUI16VZASheetRootViewV",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VZAUIManager",
+        "printedName": "VZAUIManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VZAUIManager",
+                "printedName": "VZAIAssistantUI.VZAUIManager",
+                "usr": "s:15VZAIAssistantUI12VZAUIManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any VZAIAssistantUI.VZAAssistantUIDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VZAAssistantUIDelegate",
+                    "printedName": "any VZAIAssistantUI.VZAAssistantUIDelegate",
+                    "usr": "s:15VZAIAssistantUI22VZAAssistantUIDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15VZAIAssistantUI12VZAUIManagerC8delegateAcA22VZAAssistantUIDelegate_pSg_tcfc",
+            "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC8delegateAcA22VZAAssistantUIDelegate_pSg_tcfc",
+            "moduleName": "VZAIAssistantUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setEventDelegate",
+            "printedName": "setEventDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any VZAIAssistantUI.VZAAssistantUIDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VZAAssistantUIDelegate",
+                    "printedName": "any VZAIAssistantUI.VZAAssistantUIDelegate",
+                    "usr": "s:15VZAIAssistantUI22VZAAssistantUIDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15VZAIAssistantUI12VZAUIManagerC16setEventDelegateyyAA22VZAAssistantUIDelegate_pSgF",
+            "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC16setEventDelegateyyAA22VZAAssistantUIDelegate_pSgF",
+            "moduleName": "VZAIAssistantUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "detents",
+            "printedName": "detents",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<SwiftUI.PresentationDetent>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresentationDetent",
+                    "printedName": "SwiftUI.PresentationDetent",
+                    "usr": "s:7SwiftUI18PresentationDetentV"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15VZAIAssistantUI12VZAUIManagerC7detentsShy05SwiftB018PresentationDetentVGvp",
+            "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC7detentsShy05SwiftB018PresentationDetentVGvp",
+            "moduleName": "VZAIAssistantUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<SwiftUI.PresentationDetent>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PresentationDetent",
+                        "printedName": "SwiftUI.PresentationDetent",
+                        "usr": "s:7SwiftUI18PresentationDetentV"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15VZAIAssistantUI12VZAUIManagerC7detentsShy05SwiftB018PresentationDetentVGvg",
+                "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC7detentsShy05SwiftB018PresentationDetentVGvg",
+                "moduleName": "VZAIAssistantUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<SwiftUI.PresentationDetent>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PresentationDetent",
+                        "printedName": "SwiftUI.PresentationDetent",
+                        "usr": "s:7SwiftUI18PresentationDetentV"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15VZAIAssistantUI12VZAUIManagerC7detentsShy05SwiftB018PresentationDetentVGvs",
+                "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC7detentsShy05SwiftB018PresentationDetentVGvs",
+                "moduleName": "VZAIAssistantUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15VZAIAssistantUI12VZAUIManagerC7detentsShy05SwiftB018PresentationDetentVGvM",
+                "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC7detentsShy05SwiftB018PresentationDetentVGvM",
+                "moduleName": "VZAIAssistantUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "selectedDetent",
+            "printedName": "selectedDetent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationDetent",
+                "printedName": "SwiftUI.PresentationDetent",
+                "usr": "s:7SwiftUI18PresentationDetentV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15VZAIAssistantUI12VZAUIManagerC14selectedDetent05SwiftB0012PresentationE0Vvp",
+            "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC14selectedDetent05SwiftB0012PresentationE0Vvp",
+            "moduleName": "VZAIAssistantUI",
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresentationDetent",
+                    "printedName": "SwiftUI.PresentationDetent",
+                    "usr": "s:7SwiftUI18PresentationDetentV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15VZAIAssistantUI12VZAUIManagerC14selectedDetent05SwiftB0012PresentationE0Vvg",
+                "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC14selectedDetent05SwiftB0012PresentationE0Vvg",
+                "moduleName": "VZAIAssistantUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresentationDetent",
+                    "printedName": "SwiftUI.PresentationDetent",
+                    "usr": "s:7SwiftUI18PresentationDetentV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15VZAIAssistantUI12VZAUIManagerC14selectedDetent05SwiftB0012PresentationE0Vvs",
+                "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC14selectedDetent05SwiftB0012PresentationE0Vvs",
+                "moduleName": "VZAIAssistantUI",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15VZAIAssistantUI12VZAUIManagerC14selectedDetent05SwiftB0012PresentationE0VvM",
+                "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC14selectedDetent05SwiftB0012PresentationE0VvM",
+                "moduleName": "VZAIAssistantUI",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$selectedDetent",
+            "printedName": "$selectedDetent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<SwiftUI.PresentationDetent>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15VZAIAssistantUI12VZAUIManagerC15$selectedDetent7Combine9PublishedV9PublisherVy05SwiftB0012PresentationE0V_Gvp",
+            "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC15$selectedDetent7Combine9PublishedV9PublisherVy05SwiftB0012PresentationE0V_Gvp",
+            "moduleName": "VZAIAssistantUI",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<SwiftUI.PresentationDetent>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15VZAIAssistantUI12VZAUIManagerC15$selectedDetent7Combine9PublishedV9PublisherVy05SwiftB0012PresentationE0V_Gvg",
+                "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC15$selectedDetent7Combine9PublishedV9PublisherVy05SwiftB0012PresentationE0V_Gvg",
+                "moduleName": "VZAIAssistantUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<SwiftUI.PresentationDetent>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15VZAIAssistantUI12VZAUIManagerC15$selectedDetent7Combine9PublishedV9PublisherVy05SwiftB0012PresentationE0V_Gvs",
+                "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC15$selectedDetent7Combine9PublishedV9PublisherVy05SwiftB0012PresentationE0V_Gvs",
+                "moduleName": "VZAIAssistantUI",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15VZAIAssistantUI12VZAUIManagerC15$selectedDetent7Combine9PublishedV9PublisherVy05SwiftB0012PresentationE0V_GvM",
+                "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC15$selectedDetent7Combine9PublishedV9PublisherVy05SwiftB0012PresentationE0V_GvM",
+                "moduleName": "VZAIAssistantUI",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15VZAIAssistantUI12VZAUIManagerC",
+        "mangledName": "$s15VZAIAssistantUI12VZAUIManagerC",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "Import",
+        "name": "MarkdownUI",
+        "printedName": "MarkdownUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VZAIAssistantClient",
+        "printedName": "VZAIAssistantClient",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "VZAIAssistantUI"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZARootView.swift",
+      "kind": "Array",
+      "offset": 454,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZARootView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 501,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZARootView.swift",
+      "kind": "FloatLiteral",
+      "offset": 572,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZARootView.swift",
+      "kind": "FloatLiteral",
+      "offset": 598,
+      "length": 3,
+      "value": "9.0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZARootView.swift",
+      "kind": "FloatLiteral",
+      "offset": 628,
+      "length": 3,
+      "value": "8.0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatContainerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 438,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatContainerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 572,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatContainerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 584,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatContainerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 595,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatContainerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 608,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/Date+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 437,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 218,
+      "length": 8,
+      "value": "\"avatar\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 251,
+      "length": 16,
+      "value": "\"red-check-mark\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 290,
+      "length": 13,
+      "value": "\"arrow-right\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 326,
+      "length": 17,
+      "value": "\"attachment-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 360,
+      "length": 11,
+      "value": "\"send-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 15,
+      "value": "\"doc-file-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 431,
+      "length": 15,
+      "value": "\"remove-button\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 467,
+      "length": 15,
+      "value": "\"ellipsis-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 502,
+      "length": 14,
+      "value": "\"newChat-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 540,
+      "length": 14,
+      "value": "\"history-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 576,
+      "length": 16,
+      "value": "\"rightmark-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 623,
+      "length": 26,
+      "value": "\"contact-placeholder-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 670,
+      "length": 11,
+      "value": "\"home-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 701,
+      "length": 14,
+      "value": "\"talking-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 738,
+      "length": 12,
+      "value": "\"close-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 778,
+      "length": 15,
+      "value": "\"assist_avatar\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 817,
+      "length": 14,
+      "value": "\"chevron-down\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 853,
+      "length": 12,
+      "value": "\"chevron-up\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 891,
+      "length": 17,
+      "value": "\"disclaimer-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 929,
+      "length": 11,
+      "value": "\"call-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 966,
+      "length": 17,
+      "value": "\"contact-us-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1007,
+      "length": 10,
+      "value": "\"new-chat\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1046,
+      "length": 16,
+      "value": "\"back-btn-arrow\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1089,
+      "length": 18,
+      "value": "\"scroll-to-bottom\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1137,
+      "length": 19,
+      "value": "\"fb_thumb_down_sel\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1184,
+      "length": 17,
+      "value": "\"fb_thumb_up_sel\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1233,
+      "length": 15,
+      "value": "\"fb_thumb_down\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1278,
+      "length": 13,
+      "value": "\"fb_thumb_up\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1349,
+      "length": 17,
+      "value": "\"receiver-bubble\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1391,
+      "length": 15,
+      "value": "\"sender-bubble\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1431,
+      "length": 15,
+      "value": "\"doc-extension\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1475,
+      "length": 19,
+      "value": "\"attachment-bubble\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1521,
+      "length": 17,
+      "value": "\"attachment-text\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1567,
+      "length": 19,
+      "value": "\"attachment-border\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1614,
+      "length": 18,
+      "value": "\"suggestion-color\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1661,
+      "length": 20,
+      "value": "\"contact-name-color\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1705,
+      "length": 14,
+      "value": "\"history-list\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1753,
+      "length": 23,
+      "value": "\"signUpTextfieldBorder\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1814,
+      "length": 29,
+      "value": "\"close-transcript-background\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1872,
+      "length": 20,
+      "value": "\"contact-us-details\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/VZAAssetUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 1925,
+      "length": 24,
+      "value": "\"disclaimer-detail-text\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Bubbles\/VZAGifView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 523,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatContainerViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 663,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatContainerViewModel.swift",
+      "kind": "Array",
+      "offset": 783,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatContainerViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 839,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatContainerViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 897,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatContainerViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 948,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatContainerViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 986,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatContainerViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1038,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAMoreOptionsViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 223,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAMoreOptionsViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 275,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAMoreOptionsViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
+      "length": 14,
+      "value": "\"+18008374966\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Helper\/VZAEventHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 157,
+      "length": 13,
+      "value": "\"User_Action\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Helper\/VZAEventHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 229,
+      "length": 19,
+      "value": "\"VERIZON_ASSISTANT\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Helper\/VZAEventHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
+      "length": 13,
+      "value": "\"CHAT_SCREEN\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Helper\/VZAEventHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 335,
+      "length": 6,
+      "value": "\"MORE\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Helper\/VZAEventHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 363,
+      "length": 12,
+      "value": "\"CONTACT_US\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Helper\/VZAEventHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 12,
+      "value": "\"DISCLAIMER\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Helper\/VZAEventHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 434,
+      "length": 14,
+      "value": "\"CHAT_HISTORY\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Helper\/VZAEventHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 473,
+      "length": 16,
+      "value": "\"START_NEW_CHAT\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Helper\/VZAEventHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 513,
+      "length": 14,
+      "value": "\"SEND_MESSAGE\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Helper\/VZAEventHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 556,
+      "length": 19,
+      "value": "\"ASSISTANT_DISMISS\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Helper\/VZAEventHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 797,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatInputView.swift",
+      "kind": "FloatLiteral",
+      "offset": 680,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatInputView.swift",
+      "kind": "FloatLiteral",
+      "offset": 695,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatInputView.swift",
+      "kind": "FloatLiteral",
+      "offset": 709,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatInputView.swift",
+      "kind": "FloatLiteral",
+      "offset": 725,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZASheetRootView.swift",
+      "kind": "StringLiteral",
+      "offset": 1793,
+      "length": 34,
+      "value": "\"Change detent: \""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZASheetRootView.swift",
+      "kind": "StringLiteral",
+      "offset": 1826,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatHistoryViewModel.swift",
+      "kind": "Dictionary",
+      "offset": 328,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/Font+Verizon.swift",
+      "kind": "StringLiteral",
+      "offset": 171,
+      "length": 20,
+      "value": "\"VerizonNHGDS-Light\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/Font+Verizon.swift",
+      "kind": "StringLiteral",
+      "offset": 214,
+      "length": 20,
+      "value": "\"VerizonNHGeDS-Bold\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/Font+Verizon.swift",
+      "kind": "StringLiteral",
+      "offset": 260,
+      "length": 23,
+      "value": "\"VerizonNHGeDS-Regular\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/Font+Verizon.swift",
+      "kind": "StringLiteral",
+      "offset": 306,
+      "length": 20,
+      "value": "\"VerizonNHGeTX-Bold\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Utils\/Font+Verizon.swift",
+      "kind": "StringLiteral",
+      "offset": 352,
+      "length": 23,
+      "value": "\"VerizonNHGeTx-Regular\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAMessageListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 582,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAMessageListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 630,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAMessageListView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 729,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAMessageListView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 741,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAMessageListView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 752,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAMessageListView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 765,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatHistoryView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 358,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatHistoryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 457,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatHistoryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 469,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatHistoryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 480,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/Views\/VZAChatHistoryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 493,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatInputViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 480,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatInputViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 519,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatInputViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 563,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatInputViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 604,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatInputViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 648,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Documents\/Projects\/Assistant_Shannon\/vz-assistant-ios-v2\/VZAssistant\/Frameworks\/VZAIAssistantUI\/VZAIAssistantUI\/ViewModels\/VZAChatInputViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 693,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 641,
+      "length": 19,
+      "value": "\"attachment-border\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 803,
+      "length": 19,
+      "value": "\"attachment-bubble\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 961,
+      "length": 17,
+      "value": "\"attachment-text\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1122,
+      "length": 20,
+      "value": "\"contact-us-details\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1294,
+      "length": 24,
+      "value": "\"disclaimer-detail-text\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1453,
+      "length": 15,
+      "value": "\"doc-extension\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1607,
+      "length": 17,
+      "value": "\"receiver-bubble\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1759,
+      "length": 15,
+      "value": "\"sender-bubble\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1910,
+      "length": 18,
+      "value": "\"suggestion-color\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2164,
+      "length": 13,
+      "value": "\"arrow-right\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2312,
+      "length": 15,
+      "value": "\"assist_avatar\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2466,
+      "length": 17,
+      "value": "\"attachment-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2605,
+      "length": 8,
+      "value": "\"avatar\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2749,
+      "length": 16,
+      "value": "\"back-btn-arrow\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2892,
+      "length": 11,
+      "value": "\"call-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3021,
+      "length": 6,
+      "value": "\"chat\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3160,
+      "length": 14,
+      "value": "\"chevron-down\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3303,
+      "length": 12,
+      "value": "\"chevron-up\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3444,
+      "length": 12,
+      "value": "\"close-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3594,
+      "length": 17,
+      "value": "\"contact-us-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3750,
+      "length": 17,
+      "value": "\"disclaimer-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3902,
+      "length": 15,
+      "value": "\"ellipsis-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4051,
+      "length": 15,
+      "value": "\"fb_thumb_down\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4207,
+      "length": 19,
+      "value": "\"fb_thumb_down_sel\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4356,
+      "length": 13,
+      "value": "\"fb_thumb_up\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4506,
+      "length": 17,
+      "value": "\"fb_thumb_up_sel\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4656,
+      "length": 14,
+      "value": "\"history-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4788,
+      "length": 6,
+      "value": "\"home\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4921,
+      "length": 11,
+      "value": "\"home-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5057,
+      "length": 10,
+      "value": "\"new-chat\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5200,
+      "length": 14,
+      "value": "\"newChat-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5350,
+      "length": 16,
+      "value": "\"red-check-mark\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5501,
+      "length": 15,
+      "value": "\"remove-button\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5656,
+      "length": 18,
+      "value": "\"scroll-to-bottom\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5801,
+      "length": 11,
+      "value": "\"send-icon\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5938,
+      "length": 10,
+      "value": "\"settings\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Library\/Developer\/Xcode\/DerivedData\/VZAssistant-cowmiszphwplsncowowtzhzqmhbs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VZAIAssistantUI\/IntermediateBuildFilesPath\/VZAIAssistantUI.build\/Release-iphonesimulator\/VZAIAssistantUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6081,
+      "length": 14,
+      "value": "\"talking-icon\""
+    }
+  ]
+}

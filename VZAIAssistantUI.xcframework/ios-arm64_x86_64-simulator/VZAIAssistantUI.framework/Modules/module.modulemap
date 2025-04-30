@@ -1,0 +1,4 @@
+framework module VZAIAssistantUI {
+  header "VZAIAssistantUI-Swift.h"
+  requires objc
+}

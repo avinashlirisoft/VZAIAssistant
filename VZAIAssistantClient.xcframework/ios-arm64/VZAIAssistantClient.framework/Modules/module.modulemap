@@ -1,0 +1,11 @@
+framework module VZAIAssistantClient {
+  umbrella header "VZAIAssistantClient.h"
+  export *
+
+  module * { export * }
+}
+
+module VZAIAssistantClient.Swift {
+  header "VZAIAssistantClient-Swift.h"
+  requires objc
+}
